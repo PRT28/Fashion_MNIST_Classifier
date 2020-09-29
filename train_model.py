@@ -2,8 +2,6 @@ import tensorflow as tf
 
 (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.fashion_mnist.load_data() #downloaded the fashion mnist dataset from Keras
 
-labels= ['T-shirt', 'trousers', 'pullover', 'dress', 'coat','sandal', 'shirt', 'sneaker', 'bag', 'ankle boot'] #labels for the dataset
-
 train_images = train_images.reshape(train_images.shape[0], 28, 28, 1) #reshaped the download dataset to 60000 images with each of 28X28 size with 1 channel
 test_images = test_images.reshape(test_images.shape[0], 28, 28, 1) ##reshaped the download dataset to 10000 images with each of 28X28 size with 1 channel
 
