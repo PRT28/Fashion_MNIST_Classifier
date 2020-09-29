@@ -2,8 +2,6 @@ import tensorflow as tf
 import cv2
 import numpy as np
 
-(train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.fashion_mnist.load_data()
-
 labels= ['T-shirt', 'trousers', 'pullover', 'dress', 'coat','sandal', 'shirt', 'sneaker', 'bag', 'ankle boot']
 
 model=tf.keras.models.load_model('model.h5')
